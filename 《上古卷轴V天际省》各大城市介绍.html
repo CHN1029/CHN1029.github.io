@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/zhuye.css">
+	<link rel="stylesheet" type="text/css" href="css/gundong.css">
+	<link rel="stylesheet" type="text/css" href="css/picture.css">
+	<meta charset="utf-8">
+<title>《上古卷轴V》相关内容介绍</title>
+</head>
+<body>
+	<div class="wrap">
+		<div class="caktye" id="inner">
+			<a href="pages/picture.html"><img src="images/picture/1.jpg" alt=""></a>
+  		  	<a href="###"><img src="images/picture/2.jpg" alt=""></a>
+    		<a href="###"><img src="images/picture/3.jpg" alt=""></a>
+    		<a href="###"><img src="images/picture/4.jpg" alt=""></a>
+    		<a href="###"><img src="images/picture/5.jpg" alt=""></a>
+			<a href="###"><img src="images/picture/6.jpg" alt=""></a>
+			<a href="###"><img src="images/picture/7.jpg" alt=""></a>
+    		<a href="###"><img src="images/picture/1.jpg" alt=""></a>
+   		</div>
+    	<div class="main">
+      		<button class="active">1</button>
+      		<button>2</button>
+      		<button>3</button>
+      		<button>4</button>
+      		<button>5</button>
+	  		<button>6</button>
+	  		<button>7</button>
+   		</div>
+   		<div>
+      		<a href="###" id="prevBtn"></a>
+      		<a href="###" id="nextBtn"></a>
+   		</div>
+  	</div>
+	<a href="pages/ditu.html">
+		<button class="ditu">
+			<p style="font-size: 22px;color: aliceblue">&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;点击展开天际地图</p>
+			</button>
+	</a>
+	<div class="vueBox" id="vueBox" style="margin-left: 100px;">
+        <div class="marquee">
+            <div class="marquee_box">
+                <ul class="marquee_list" :class="{marquee_top:animate}">
+                    <li v-for="(item, index) in marqueeList">
+                        <span>{{item.word}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+	<script type="text/javascript" src="js/picture.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+    <script type="text/javascript" language="javascript" src="js/gundong.js"></script>
+</body>
+</html>

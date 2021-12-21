@@ -1,0 +1,52 @@
+@charset "utf-8";
+@keyframes fade-in {  0% {opacity: 0;}40% {opacity: 0;}100% {opacity: 1;}}
+.vueBox, ul, li, span, img {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.marquee {
+	margin-left: -30px;
+	margin-top: 470px;
+	width: 880px;
+	height: 243px;
+	align-items: center;
+	color:#000000;
+	background-color:rgba(184,241,248,0.70);
+	display: flex;
+	animation: fade-in;animation-duration: 1.3s;
+	border:5px #FFFFFF solid;
+	border-radius:10px;
+	box-shadow:22px 22px 13px #000000;
+}
+
+.marquee_box {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 243px;
+	overflow: hidden;
+}
+
+.marquee_list {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.marquee_top {
+	transition: all 1s;
+	margin-top: -25px
+}
+
+.marquee_list li {
+	height: 22px;
+	line-height: 22px;
+	font-size: 18px;
+	padding-left: 20px;
+}
+
+.marquee_list li span {
+	padding: 0 2px;
+}
